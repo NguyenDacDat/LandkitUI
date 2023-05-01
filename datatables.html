@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/styles/mainCss.css" />
+        <link rel="stylesheet" href="./assets/styles/component.css" />
+        <link rel="stylesheet" href="./assets/styles/responsive.css" />
+        <link rel="stylesheet" href="./assets/styles/defaultClass.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+            integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/styles/datatablesStyle.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrap">
+                <div class="action-head d-flex justify-spacebetween">
+                    <div class="d-flex">
+                        <p>Show</p>
+                        <select class="row-per-page">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        <p>entries</p>
+                    </div>
+                    <div class="d-flex">
+                        <p>Search :</p>
+                        <div class="input">
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+                <table id="datatable" class="tb"></table>
+                <div
+                    class="pagination-wrap d-flex justify-spacebetween alignItems-center"
+                >
+                    <p class="text-current-show">
+                        Showing 31 to 40 of 57 entries
+                    </p>
+                    <div class="pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./handleInteract/custom.js"></script>
+    </body>
+</html>
